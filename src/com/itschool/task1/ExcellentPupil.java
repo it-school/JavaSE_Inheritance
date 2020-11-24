@@ -1,13 +1,13 @@
 package com.itschool.task1;
 
-public class ExcelentPupil extends Pupil
+public class ExcellentPupil extends Pupil
 {
-	public ExcelentPupil(String name)
+	public ExcellentPupil(String name)
 	{
 		super(name);
 	}
 
-	public ExcelentPupil(String name, Sex sex)
+	public ExcellentPupil(String name, Sex sex)
 	{
 		super(name, sex);
 	}

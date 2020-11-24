@@ -1,15 +1,37 @@
 package com.itschool;
 
 import com.itschool.task1.*;
-import com.itschool.task2.*;
+import com.itschool.task2.Car;
+import com.itschool.task2.CarType;
+import com.itschool.task2.Vehicle;
 
 public class Main
 {
 	public static void main(String[] args)
 	{
-		task1();
-		task2();
-		task3();
+		//task1();
+		task1_Interfaces();
+//		task2();
+//		task3();
+
+/*
+		Rectangle rectangle = new Rectangle(3, 4);
+		System.out.println(rectangle);
+
+		Parallelepiped parallelepiped = new Parallelepiped(4,5,6);
+		System.out.println(parallelepiped);
+*/
+	}
+
+	private static void task1_Interfaces()
+	{
+		com.itschool.Task1_Interfaces.ExcellentPupil excellentPupil = new com.itschool.Task1_Interfaces.ExcellentPupil("Danila", Sex.male);
+		System.out.println(excellentPupil);
+		excellentPupil.gotoSchool("8:00");
+		System.out.println();
+		com.itschool.Task1_Interfaces.BadPupil badPupil = new com.itschool.Task1_Interfaces.BadPupil("Kate", Sex.female);
+		System.out.println(badPupil);
+		badPupil.gotoSchool("8:00");
 	}
 
 	private static void task1()
@@ -17,7 +39,7 @@ public class Main
 		Pupil pupil = new Pupil("Andrew");
 		System.out.println(pupil);
 
-		ExcelentPupil excelentPupil = new ExcelentPupil("John");
+		ExcellentPupil excelentPupil = new ExcellentPupil("John");
 		System.out.println(excelentPupil);
 
 		BadPupil badPupil = new BadPupil("Billy");
